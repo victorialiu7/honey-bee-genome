@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+  
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="Content-Type">
+  <title>See Results Template</title>
+
+  
+  
+  <style>
+    table, th, td {
+        border: 2px solid black !important; 
+        text-align: center;
+    }
+    th:first-child, td:first-child {
+        text-align: left;
+        color: blue;
+    }
+  </style>
+</head><body>
+<h1>Honey Bee Genes with Highest<br>
+</h1>
+
+<h1>Occurrence of Each Nucleotide <br>
+</h1>
+
+<form action="/data_output.cgi" method="get">
+  <table>
+    <tbody>
+      <tr>
+        <th style="color: black; font-weight: bold;">Nucelotide</th>
+        <th>Code</th>
+        <th>gi (Gene ID)</th>
+        <th>Highest Relative Frequency</th>
+      </tr>
+      <tr>
+        <td style="text-decoration: underline;">Adenine</td>
+        <td>A</td>
+        <td>%s</td>
+        <td>%s</td>
+      </tr>
+      <tr>
+        <td style="text-decoration: underline;">Cytosine</td>
+        <td>C</td>
+        <td>%s</td>
+        <td>%s</td>
+      </tr>
+      <tr>
+        <td style="text-decoration: underline;">Guanine</td>
+        <td>G</td>
+        <td>%s</td>
+        <td>%s</td>
+      </tr>
+      <tr>
+        <td style="text-decoration: underline;">Thymine</td>
+        <td>T</td>
+        <td>%s</td>
+        <td>%s</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>Last update by Victoria Liu</p>
+</form>
+
+</body></html>
